@@ -1,17 +1,8 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
-  content: ['*.html'],
-  darkMode: 'class',
-  theme: {
-    extend: {
-      textColor: {
-        tomato: 'tomato'
-      },
-      fontFamily: {
-        main: ['Mali', 'cursive']
-      }
-    },
-  },
-  plugins: [],
-}
+  content: ["./**/*.{html,js}", "!./node_modules/**/*.*"],
+    theme: {
+    extend: {}
+  }, plugins: []
+};
 
