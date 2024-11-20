@@ -4,8 +4,280 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FASHION</title>
+  <link href="result.css" rel="stylesheet">
 </head>
-<body>
+<body class="font-regular">
+
+<header class="containers flex justify-between mt-11 items-center">
+  <img src="icons/logo.svg">
+  <nav class="lg:block hidden">
+    <ul class="flex gap-14 items-center font-medium">
+      <li><a href="#">CATALOGUE</a></li>
+      <li><a href="#">FASHION</a></li>
+      <li><a href="#">FAVOURITE</a></li>
+      <li><a href="#">LIFESTYLE</a></li>
+      <li>
+        <button type="button" class="button">
+          SIGN UP
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+
+  <nav class="hamburger-menu lg:hidden">
+    <input id="menu-toggle" type="checkbox">
+    <label class="menu-btn flex items-center relative -top-4 right-4 w-10 h-10 z-20" for="menu-toggle">
+      <span></span>
+    </label>
+    <ul class="menu-box bg-gray-100 block fixed ">
+      <li class="menu-item"><a href="#">CATALOGUE</a></li>
+      <li class="menu-item"><a href="#">FASHION</a></li>
+      <li class="menu-item"><a href="#">FAVOURITE</a></li>
+      <li class="menu-item"><a href="#">LIFESTYLE</a></li>
+      <li>
+        <button type="button" class="button m-6">
+          SIGN UP
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+</header>
+
+
+<div class="hero containers flex items-end mt-14 bg-gray-100 rounded-[60px] pl-20 pt-16">
+  <div class="xl:max-w-2xl max-w-lg">
+    <h1 class="font-black xl:text-8xl text-7xl xl:leading-[7.5rem] leading-[6rem]">
+      <span class="sticker before:bg-white before:w-[20rem] xl:before:w-[29rem] before:-left-7 before:top-3">LET’S</span>
+      EXPLORE
+      <span class="sticker before:bg-accent before:w-[24rem] xl:before:w-[31rem]  before:-right-8 before:top-28">UNIQUE</span>
+      CLOTHES.
+    </h1>
+    <p class="text-3xl py-10">Live for Influential and Innovative fashion!</p>
+    <button type="button" class="button text-3xl leading-relaxed mb-24">Shop Now</button>
+  </div>
+  <div class="overflow-hidden rounded-[60px]">
+    <img class="max-w-max" src="images/bg-hero.svg">
+  </div>
+</div>
+
+<div class="mt-16 flex bg-accent py-14 px-[5%] justify-between items-center">
+  <img class="max-w-28" src="icons/h&m.svg">
+  <img class="max-w-28" src="icons/obey.svg">
+  <img class="max-w-28" src="icons/shopify.svg">
+  <img class="max-w-28" src="icons/lacoste.png">
+  <img class="max-w-28" src="icons/levis.svg">
+  <img class="max-w-28" src="icons/amazon.svg">
+</div>
+
+<article class="containers mt-16">
+  <h3 class="font-black text-5xl">
+    NEW ARRIVALS
+    <svg class="left-48 -top-7 relative -z-10" width="186" height="35" viewBox="0 0 186 35" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+      <path d="M84 3.97549C65.3333 8.30883 22.4 19.9755 0 31.9755C56.6667 37.3088 173.2 39.1755 186 3.97549C168 0.975492 122.4 -3.22451 84 3.97549Z"
+            fill="#EBD96B"/>
+    </svg>
+  </h3>
+  <div class="flex mt-24 justify-around">
+    <article class="pr-[2%]">
+      <img src="images/hoodies.svg">
+      <div class="flex justify-between items-center mt-7">
+        <div>
+          <h4 class="font-medium text-3xl leading-relaxed">Hoodies & Sweetshirt</h4>
+          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+        </div>
+        <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
+                fill="#797979"/>
+        </svg>
+      </div>
+    </article>
+    <article class="pr-[2%]">
+      <img src="images/coats.svg">
+      <div class="flex justify-between items-center mt-7">
+        <div>
+          <h4 class="font-medium text-3xl leading-relaxed">Coats & Parkas</h4>
+          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+        </div>
+        <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
+                fill="#797979"/>
+        </svg>
+      </div>
+    </article>
+    <article>
+      <img src="images/tees.svg">
+      <div class="flex justify-between items-center mt-7">
+        <div>
+          <h4 class="font-medium text-3xl leading-relaxed">Tees & T-Shirt</h4>
+          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+        </div>
+        <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
+                fill="#797979"/>
+        </svg>
+      </div>
+    </article>
+  </div>
+</article>
+
+<div class="flex items-end mt-44 bg-gradient-to-b from-yellow-300 to-accent">
+  <div class="overflow-hidden flex flex-col items-center w-1/2">
+    <img class="max-w-max" src="images/banner.svg">
+  </div>
+  <div class="flex flex-col items-start max-w-[40vw] pl-20 pt-32">
+    <h2 class="font-black xl:text-9xl lg:text-8xl text-7xl mb-9">
+      <span class="sticker before:bg-white before:w-[109%] before:-left-7 before:top-1">PAYDAY</span>
+      <br>
+      SALE NOW
+    </h2>
+    <p class="font-medium lg:text-4xl text-3xl mb-9">
+      Spend minimal $100 get 30% off
+      voucher code for your next purchase
+    </p>
+    <p class="font-bold lg:text-4xl text-3xl">
+      1 June - 10 June 2021
+    </p>
+    <p class="lg:text-4xl text-3xl mb-9">
+      *Terms & Conditions apply
+    </p>
+    <button class="button lg:text-3xl text-2xl mb-40" type="button">
+      SHOP NOW
+    </button>
+  </div>
+</div>
+
+<article class="containers mt-44">
+  <h3 class="font-black text-5xl">
+    Young’s Favourite
+    <svg class="left-60 -top-5 relative -z-10" width="186" height="35" viewBox="0 0 186 35" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+      <path d="M84 3.97549C65.3333 8.30883 22.4 19.9755 0 31.9755C56.6667 37.3088 173.2 39.1755 186 3.97549C168 0.975492 122.4 -3.22451 84 3.97549Z"
+            fill="#EBD96B"/>
+    </svg>
+  </h3>
+  <div class="flex mt-24 justify-around gap-8">
+    <article class="w-1/2">
+      <img src="images/trending.svg">
+      <div class="flex justify-between items-center mt-7">
+        <div>
+          <h4 class="font-medium text-3xl leading-relaxed">Trending on instagram</h4>
+          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+        </div>
+        <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
+                fill="#797979"/>
+        </svg>
+      </div>
+    </article>
+    <article class="w-1/2">
+      <img src="images/sale.svg">
+      <div class="flex justify-between items-center mt-7">
+        <div>
+          <h4 class="font-medium text-3xl leading-relaxed">All Under $40</h4>
+          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+        </div>
+        <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
+                fill="#797979"/>
+        </svg>
+      </div>
+    </article>
+  </div>
+</article>
+
+<div class="containers lg:mt-52 mt-36 flex justify-around items-center">
+  <section class="max-w-lg">
+    <h3 class="font-black text-5xl leading-normal pb-[10%]">
+      DOWNLOAD APP &
+      GET THE VOUCHER!
+    </h3>
+    <p class="font-medium text-2xl text-gray-500 pb-[10%]">
+      Get 30% off for first transaction using
+      Rondovision mobile app for now.
+    </p>
+    <div class="flex">
+      <img class="w-1/2" src="icons/app-store.svg">
+      <img class="w-1/2" src="icons/google-play.svg">
+    </div>
+  </section>
+  <img class="w-2/4 max-h-[880px] max-w-[670px]" src="images/phone.png">
+</div>
+
+<section class="bg-accent flex flex-col items-center p-[5%] mt-44">
+  <h2 class="font-black text-white lg:text-6xl text-5xl leading-tight text-center max-w-5xl pb-8">
+    JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
+  </h2>
+  <p class="text-3xl text-white text-center pb-9">
+    Type your email down below and be young wild generation
+  </p>
+  <div class="relative min-w-[30%]">
+    <input type="email" aria-describedby="helper-text-explanation"
+           class="bg-white rounded-xl text-gray-500 text-2xl text-start py-7 pl-7 pr-28 w-full"
+           placeholder="Add your email here">
+    <button type="submit"
+            class="button absolute end-2.5 bottom-4">
+      SEND
+    </button>
+  </div>
+</section>
+
+<footer class="bg-black flex xl:flex-row flex-col justify-between p-24">
+  <div class="xl:max-w-sm w-full mb-10">
+    <h2 class="font-black text-white text-4xl leading-relaxed">
+      FASHION
+    </h2>
+    <p class="text-2xl text-gray-400 py-8">
+      Complete your style with awesome clothes from us.
+    </p>
+    <div class="flex gap-3">
+      <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0.395996" width="52" height="52" rx="15" fill="#EBD96B"/>
+        <path d="M31.5122 27.4585L32.2065 22.9341H27.8652V19.998C27.8652 18.7603 28.4717 17.5537 30.416 17.5537H32.3896V13.7017C32.3896 13.7017 30.5986 13.396 28.8862 13.396C25.311 13.396 22.9741 15.563 22.9741 19.4858V22.9341H19V27.4585H22.9741V38.396H27.8652V27.4585H31.5122Z"
+              fill="black"/>
+      </svg>
+      <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0.395996" width="52" height="52" rx="15" fill="#EBD96B"/>
+        <path d="M25.946 20.7268C22.8406 20.7268 20.3357 23.2317 20.3357 26.3372C20.3357 29.4426 22.8406 31.9475 25.946 31.9475C29.0515 31.9475 31.5564 29.4426 31.5564 26.3372C31.5564 23.2317 29.0515 20.7268 25.946 20.7268ZM25.946 29.9846C23.9392 29.9846 22.2986 28.3489 22.2986 26.3372C22.2986 24.3254 23.9343 22.6897 25.946 22.6897C27.9578 22.6897 29.5935 24.3254 29.5935 26.3372C29.5935 28.3489 27.9529 29.9846 25.946 29.9846ZM33.0945 20.4973C33.0945 21.2249 32.5085 21.8059 31.7859 21.8059C31.0584 21.8059 30.4773 21.22 30.4773 20.4973C30.4773 19.7747 31.0632 19.1887 31.7859 19.1887C32.5085 19.1887 33.0945 19.7747 33.0945 20.4973ZM36.8103 21.8254C36.7273 20.0725 36.3269 18.5198 35.0427 17.2405C33.7634 15.9612 32.2107 15.5608 30.4578 15.4729C28.6511 15.3704 23.2361 15.3704 21.4294 15.4729C19.6814 15.5559 18.1287 15.9563 16.8445 17.2356C15.5603 18.5149 15.1648 20.0676 15.0769 21.8206C14.9744 23.6272 14.9744 29.0422 15.0769 30.8489C15.1599 32.6018 15.5603 34.1545 16.8445 35.4338C18.1287 36.7131 19.6765 37.1135 21.4294 37.2014C23.2361 37.304 28.6511 37.304 30.4578 37.2014C32.2107 37.1184 33.7634 36.718 35.0427 35.4338C36.322 34.1545 36.7224 32.6018 36.8103 30.8489C36.9128 29.0422 36.9128 23.6321 36.8103 21.8254ZM34.4763 32.7874C34.0955 33.7444 33.3582 34.4817 32.3962 34.8674C30.9558 35.4387 27.5378 35.3069 25.946 35.3069C24.3542 35.3069 20.9314 35.4338 19.4958 34.8674C18.5388 34.4866 17.8015 33.7493 17.4158 32.7874C16.8445 31.3469 16.9763 27.929 16.9763 26.3372C16.9763 24.7454 16.8494 21.3225 17.4158 19.887C17.7966 18.9299 18.5339 18.1926 19.4958 17.8069C20.9363 17.2356 24.3542 17.3674 25.946 17.3674C27.5378 17.3674 30.9607 17.2405 32.3962 17.8069C33.3533 18.1877 34.0906 18.925 34.4763 19.887C35.0476 21.3274 34.9158 24.7454 34.9158 26.3372C34.9158 27.929 35.0476 31.3518 34.4763 32.7874Z"
+              fill="black"/>
+      </svg>
+      <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0.395996" width="52" height="52" rx="15" fill="#EBD96B"/>
+        <path d="M38.4302 21.4563C38.446 21.6783 38.446 21.9004 38.446 22.1225C38.446 28.8959 33.2906 36.7005 23.868 36.7005C20.9651 36.7005 18.2684 35.8598 16 34.4004C16.4125 34.448 16.809 34.4639 17.2373 34.4639C19.6326 34.4639 21.8375 33.6549 23.5983 32.2748C21.3458 32.2272 19.4581 30.752 18.8077 28.7215C19.125 28.769 19.4422 28.8008 19.7754 28.8008C20.2354 28.8008 20.6955 28.7373 21.1237 28.6263C18.776 28.1504 17.0152 26.0882 17.0152 23.5978V23.5343C17.6973 23.915 18.4905 24.153 19.3312 24.1847C17.9511 23.2646 17.0469 21.6942 17.0469 19.9175C17.0469 18.9658 17.3007 18.0933 17.7449 17.3319C20.2671 20.441 24.0583 22.4714 28.3096 22.6936C28.2303 22.3128 28.1827 21.9163 28.1827 21.5197C28.1827 18.6961 30.4669 16.396 33.3064 16.396C34.7816 16.396 36.1141 17.0146 37.05 18.014C38.208 17.7919 39.3184 17.3636 40.302 16.7767C39.9212 17.9665 39.1122 18.9658 38.0494 19.6003C39.0805 19.4893 40.0799 19.2037 40.9999 18.8072C40.302 19.8224 39.4295 20.7265 38.4302 21.4563Z"
+              fill="black"/>
+      </svg>
+      <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0.395996" width="52" height="52" rx="15" fill="#EBD96B"/>
+        <path d="M20.875 34.396H17.4766V21.7163H20.875V34.396ZM17.2773 18.4351C17.2773 17.9272 17.4453 17.5093 17.7812 17.1812C18.125 16.853 18.5898 16.689 19.1758 16.689C19.7539 16.689 20.2148 16.853 20.5586 17.1812C20.9023 17.5093 21.0742 17.9272 21.0742 18.4351C21.0742 18.9507 20.8984 19.3726 20.5469 19.7007C20.2031 20.0288 19.7461 20.1929 19.1758 20.1929C18.6055 20.1929 18.1445 20.0288 17.793 19.7007C17.4492 19.3726 17.2773 18.9507 17.2773 18.4351ZM27.273 21.7163L27.3784 23.1812C28.2847 22.0483 29.4995 21.4819 31.023 21.4819C32.3667 21.4819 33.3667 21.8765 34.023 22.6655C34.6792 23.4546 35.0152 24.6343 35.0308 26.2046V34.396H31.6441V26.2866C31.6441 25.5679 31.4878 25.0483 31.1753 24.728C30.8628 24.3999 30.3433 24.2358 29.6167 24.2358C28.6636 24.2358 27.9488 24.6421 27.4722 25.4546V34.396H24.0855V21.7163H27.273Z"
+              fill="black"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="flex gap-x-44">
+    <ul>
+      <li><a class="text-2xl text-gray-200" href="#">Company</a></li>
+      <li class="footer-link"><a href="#">About</a></li>
+      <li class="footer-link"><a href="#">Contact us</a></li>
+      <li class="footer-link"><a href="#">Support</a></li>
+      <li class="footer-link"><a href="#">Careers</a></li>
+    </ul>
+    <ul>
+      <li><a class="text-2xl text-gray-200" href="#">Quick Link</a></li>
+      <li class="footer-link"><a href="#">Share Location</a></li>
+      <li class="footer-link"><a href="#">Orders Tracking</a></li>
+      <li class="footer-link"><a href="#">Size Guide</a></li>
+      <li class="footer-link"><a href="#">FAQs</a></li>
+    </ul>
+    <ul>
+      <li><a class="text-2xl text-gray-200" href="#">Legal</a></li>
+      <li class="footer-link"><a href="#">Terms & conditions</a></li>
+      <li class="footer-link"><a href="#">Privacy Policy</a></li>
+    </ul>
+  </div>
+</footer>
 
 </body>
 </html>
