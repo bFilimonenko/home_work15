@@ -9,8 +9,8 @@
 <body class="font-regular">
 
 <header class="containers flex justify-between mt-11 items-center">
-  <img src="icons/logo.svg">
-  <nav class="lg:block hidden">
+  <a class="lg:w-1/3 lg:fixed z-20 top-[10px]" href="index.html"><img src="icons/logo.svg"></a>
+  <nav class="block lg:hidden">
     <ul class="flex gap-14 items-center font-medium">
       <li><a href="#">CATALOGUE</a></li>
       <li><a href="#">FASHION</a></li>
@@ -24,69 +24,68 @@
     </ul>
   </nav>
 
-
-  <nav class="hamburger-menu lg:hidden">
+  <nav class="lg:block hidden">
     <input id="menu-toggle" type="checkbox">
-    <label class="menu-btn flex items-center relative -top-4 right-4 w-10 h-10 z-20" for="menu-toggle">
+    <label class="menu-btn flex items-center fixed top-3 right-[5%] w-10 h-10 z-50 shadow-lg hover:shadow-md rounded-md"
+           for="menu-toggle">
       <span></span>
     </label>
-    <ul class="menu-box bg-gray-100 block fixed ">
-      <li class="menu-item"><a href="#">CATALOGUE</a></li>
-      <li class="menu-item"><a href="#">FASHION</a></li>
-      <li class="menu-item"><a href="#">FAVOURITE</a></li>
-      <li class="menu-item"><a href="#">LIFESTYLE</a></li>
+    <ul class="menu-box bg-gray-100 block fixed top-0 -right-full w-80 sm:min-w-64 h-full py-24 duration-300 z-30">
+      <li class="block p-4 hover:bg-gray-300 duration-300"><a href="#">CATALOGUE</a></li>
+      <li class="block p-4 hover:bg-gray-300 duration-300"><a href="#">FASHION</a></li>
+      <li class="block p-4 hover:bg-gray-300 duration-300"><a href="#">FAVOURITE</a></li>
+      <li class="block p-4 hover:bg-gray-300 duration-300"><a href="#">LIFESTYLE</a></li>
       <li>
         <button type="button" class="button m-6">
           SIGN UP
         </button>
       </li>
     </ul>
+    <span class="hidden lg:block bg-gray-200 h-16 w-full fixed top-0 left-0 z-10"></span>
   </nav>
-
 </header>
 
-
-<div class="hero containers flex items-end mt-14 bg-gray-100 rounded-[60px] pl-20 pt-16">
-  <div class="xl:max-w-2xl max-w-lg">
-    <h1 class="font-black xl:text-8xl text-7xl xl:leading-[7.5rem] leading-[6rem]">
-      <span class="sticker before:bg-white before:w-[20rem] xl:before:w-[29rem] before:-left-7 before:top-3">LET’S</span>
+<div class="hero containers flex items-end mt-14 bg-gray-100 rounded-[60px] pl-20 sm:p-8 pt-16">
+  <div class="max-w-2xl xl:max-w-lg sm:max-w-[415px] mx-auto">
+    <h1 class="font-black text-8xl xl:text-7xl sm:text-4xl leading-[7.5rem] xl:leading-[6rem]">
+      <span class="sticker before:bg-white xl:before:w-[20rem] before:w-[29rem] before:-left-7 before:top-3 sm:before:w-[8rem] sm:before:top-0">LET’S</span>
       EXPLORE
-      <span class="sticker before:bg-accent before:w-[24rem] xl:before:w-[31rem]  before:-right-8 before:top-28">UNIQUE</span>
+      <span class="sticker before:bg-accent xl:before:w-[24rem] before:w-[31rem] before:-right-8 before:top-28 sm:before:top-10 sm:before:w-[9rem] sm:before:right-32">UNIQUE</span>
       CLOTHES.
     </h1>
-    <p class="text-3xl py-10">Live for Influential and Innovative fashion!</p>
-    <button type="button" class="button text-3xl leading-relaxed mb-24">Shop Now</button>
+    <p class="text-3xl sm:text-xl py-10">Live for Influential and Innovative fashion!</p>
+    <button type="button" class="button text-3xl sm:text-xl leading-relaxed mb-24 sm:mb-10">Shop Now</button>
   </div>
-  <div class="overflow-hidden rounded-[60px]">
+  <div class="overflow-hidden rounded-[60px] block md:hidden">
     <img class="max-w-max" src="images/bg-hero.svg">
   </div>
 </div>
 
-<div class="mt-16 flex bg-accent py-14 px-[5%] justify-between items-center">
-  <img class="max-w-28" src="icons/h&m.svg">
-  <img class="max-w-28" src="icons/obey.svg">
-  <img class="max-w-28" src="icons/shopify.svg">
-  <img class="max-w-28" src="icons/lacoste.png">
-  <img class="max-w-28" src="icons/levis.svg">
-  <img class="max-w-28" src="icons/amazon.svg">
+<div class="mt-16 flex flex-nowrap lg:flex-wrap bg-accent py-14 px-[5%] sm:px-0 justify-between items-center">
+  <img class="w-28 m-0 lg:m-6 lg:w-1/5 " src="icons/h&m.svg">
+  <img class="w-28 m-0 lg:m-6 lg:w-1/5 " src="icons/obey.svg">
+  <img class="w-28 m-0 lg:m-6 lg:w-1/5 " src="icons/shopify.svg">
+  <img class="w-28 m-0 lg:m-6 lg:w-1/5 " src="icons/lacoste.png">
+  <img class="w-28 m-0 lg:m-6 lg:w-1/5 " src="icons/levis.svg">
+  <img class="w-28 m-0 lg:m-6 lg:w-1/5 " src="icons/amazon.svg">
 </div>
 
 <article class="containers mt-16">
-  <h3 class="font-black text-5xl">
+  <h3 class="font-black text-5xl sm:text-2xl">
     NEW ARRIVALS
-    <svg class="left-48 -top-7 relative -z-10" width="186" height="35" viewBox="0 0 186 35" fill="none"
+    <svg class="left-48 sm:left-8 -top-7 relative -z-10" width="186" height="35" viewBox="0 0 186 35" fill="none"
          xmlns="http://www.w3.org/2000/svg">
       <path d="M84 3.97549C65.3333 8.30883 22.4 19.9755 0 31.9755C56.6667 37.3088 173.2 39.1755 186 3.97549C168 0.975492 122.4 -3.22451 84 3.97549Z"
             fill="#EBD96B"/>
     </svg>
   </h3>
-  <div class="flex mt-24 justify-around">
-    <article class="pr-[2%]">
+  <div class="flex sm:flex-col mt-24 sm:mt-8 justify-around">
+    <article class="pr-[2%] sm:pt-4 sm:w-3/4">
       <img src="images/hoodies.svg">
-      <div class="flex justify-between items-center mt-7">
+      <div class="flex justify-between items-center mt-7 sm:mt-4">
         <div>
-          <h4 class="font-medium text-3xl leading-relaxed">Hoodies & Sweetshirt</h4>
-          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+          <h4 class="font-medium text-3xl sm:text-xl leading-relaxed">Hoodies & Sweetshirt</h4>
+          <p class="font-medium text-2xl sm:text-lg text-gray-500">Explore Now!</p>
         </div>
         <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
@@ -94,12 +93,12 @@
         </svg>
       </div>
     </article>
-    <article class="pr-[2%]">
+    <article class="pr-[2%] sm:pt-4 sm:w-3/4">
       <img src="images/coats.svg">
       <div class="flex justify-between items-center mt-7">
         <div>
-          <h4 class="font-medium text-3xl leading-relaxed">Coats & Parkas</h4>
-          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+          <h4 class="font-medium text-3xl sm:text-xl leading-relaxed">Coats & Parkas</h4>
+          <p class="font-medium text-2xl sm:text-lg text-gray-500">Explore Now!</p>
         </div>
         <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
@@ -107,12 +106,12 @@
         </svg>
       </div>
     </article>
-    <article>
+    <article class="sm:pt-4 sm:w-3/4">
       <img src="images/tees.svg">
       <div class="flex justify-between items-center mt-7">
         <div>
-          <h4 class="font-medium text-3xl leading-relaxed">Tees & T-Shirt</h4>
-          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+          <h4 class="font-medium text-3xl sm:text-xl leading-relaxed">Tees & T-Shirt</h4>
+          <p class="font-medium text-2xl sm:text-lg text-gray-500">Explore Now!</p>
         </div>
         <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
@@ -123,48 +122,48 @@
   </div>
 </article>
 
-<div class="flex items-end mt-44 bg-gradient-to-b from-yellow-300 to-accent">
-  <div class="overflow-hidden flex flex-col items-center w-1/2">
-    <img class="max-w-max" src="images/banner.svg">
+<div class="flex items-end mt-44 sm:mt-20 bg-gradient-to-b from-yellow-300 to-accent">
+  <div class="overflow-hidden flex flex-col items-center w-1/2 sm:hidden">
+    <img class="max-w-max md:h-[777px]" src="images/banner.svg">
   </div>
-  <div class="flex flex-col items-start max-w-[40vw] pl-20 pt-32">
-    <h2 class="font-black xl:text-9xl lg:text-8xl text-7xl mb-9">
-      <span class="sticker before:bg-white before:w-[109%] before:-left-7 before:top-1">PAYDAY</span>
+  <div class="flex flex-col items-start max-w-[50%] sm:max-w-full sm:p-8 pl-20 pr-5 pt-32">
+    <h2 class="font-black text-9xl xl:text-8xl lg:text-7xl md:text-5xl mb-9">
+      <span class="sticker before:bg-white before:w-[109%] before:-left-7 before:top-1 md:before:h-10">PAYDAY</span>
       <br>
       SALE NOW
     </h2>
-    <p class="font-medium lg:text-4xl text-3xl mb-9">
+    <p class="font-medium text-4xl lg:text-3xl md:text-xl mb-9">
       Spend minimal $100 get 30% off
       voucher code for your next purchase
     </p>
-    <p class="font-bold lg:text-4xl text-3xl">
+    <p class="font-bold text-4xl lg:text-3xl md:text-xl">
       1 June - 10 June 2021
     </p>
-    <p class="lg:text-4xl text-3xl mb-9">
+    <p class="text-4xl lg:text-3xl md:text-xl mb-9">
       *Terms & Conditions apply
     </p>
-    <button class="button lg:text-3xl text-2xl mb-40" type="button">
+    <button class="button text-3xl lg:text-2xl sm:text-lg mb-40 sm:mb-14" type="button">
       SHOP NOW
     </button>
   </div>
 </div>
 
-<article class="containers mt-44">
-  <h3 class="font-black text-5xl">
+<article class="containers mt-44 sm:mt-20">
+  <h3 class="font-black text-5xl sm:text-2xl">
     Young’s Favourite
-    <svg class="left-60 -top-5 relative -z-10" width="186" height="35" viewBox="0 0 186 35" fill="none"
+    <svg class="left-60 sm:left-16 -top-5 sm:-top-7 relative -z-10" width="186" height="35" viewBox="0 0 186 35" fill="none"
          xmlns="http://www.w3.org/2000/svg">
       <path d="M84 3.97549C65.3333 8.30883 22.4 19.9755 0 31.9755C56.6667 37.3088 173.2 39.1755 186 3.97549C168 0.975492 122.4 -3.22451 84 3.97549Z"
             fill="#EBD96B"/>
     </svg>
   </h3>
-  <div class="flex mt-24 justify-around gap-8">
-    <article class="w-1/2">
+  <div class="flex sm:flex-col mt-24 sm:mt-8 justify-around gap-8">
+    <article class="w-1/2 sm:w-full">
       <img src="images/trending.svg">
       <div class="flex justify-between items-center mt-7">
         <div>
-          <h4 class="font-medium text-3xl leading-relaxed">Trending on instagram</h4>
-          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+          <h4 class="font-medium text-3xl sm:text-xl leading-relaxed">Trending on instagram</h4>
+          <p class="font-medium text-2xl sm:text-lg text-gray-500">Explore Now!</p>
         </div>
         <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
@@ -172,12 +171,12 @@
         </svg>
       </div>
     </article>
-    <article class="w-1/2">
+    <article class="w-1/2 sm:w-full">
       <img src="images/sale.svg">
       <div class="flex justify-between items-center mt-7">
         <div>
-          <h4 class="font-medium text-3xl leading-relaxed">All Under $40</h4>
-          <p class="font-medium text-2xl text-gray-500">Explore Now!</p>
+          <h4 class="font-medium text-3xl sm:text-xl leading-relaxed">All Under $40</h4>
+          <p class="font-medium text-2xl sm:text-lg text-gray-500">Explore Now!</p>
         </div>
         <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M33.0607 12.5607C33.6464 11.9749 33.6464 11.0251 33.0607 10.4393L23.5147 0.893398C22.9289 0.307611 21.9792 0.307611 21.3934 0.893398C20.8076 1.47919 20.8076 2.42893 21.3934 3.01472L29.8787 11.5L21.3934 19.9853C20.8076 20.5711 20.8076 21.5208 21.3934 22.1066C21.9792 22.6924 22.9289 22.6924 23.5147 22.1066L33.0607 12.5607ZM0 13L32 13V10L0 10L0 13Z"
@@ -188,48 +187,48 @@
   </div>
 </article>
 
-<div class="containers lg:mt-52 mt-36 flex justify-around items-center">
+<div class="containers mt-52 lg:mt-36 sm:mt-24 flex justify-around items-center">
   <section class="max-w-lg">
-    <h3 class="font-black text-5xl leading-normal pb-[10%]">
+    <h3 class="font-black text-5xl md:text-4xl sm:text-2xl leading-normal pb-[10%]">
       DOWNLOAD APP &
       GET THE VOUCHER!
     </h3>
-    <p class="font-medium text-2xl text-gray-500 pb-[10%]">
+    <p class="font-medium text-2xl md:text-xl sm:text-lg text-gray-500 pb-[10%]">
       Get 30% off for first transaction using
       Rondovision mobile app for now.
     </p>
-    <div class="flex">
+    <div class="flex md:w-3/4">
       <img class="w-1/2" src="icons/app-store.svg">
       <img class="w-1/2" src="icons/google-play.svg">
     </div>
   </section>
-  <img class="w-2/4 max-h-[880px] max-w-[670px]" src="images/phone.png">
+  <img class="w-2/4 sm:w-5/12 max-h-[880px] max-w-[670px]" src="images/phone.png">
 </div>
 
-<section class="bg-accent flex flex-col items-center p-[5%] mt-44">
-  <h2 class="font-black text-white lg:text-6xl text-5xl leading-tight text-center max-w-5xl pb-8">
+<section class="bg-accent flex flex-col items-center p-[5%] mt-44 sm:mt-20">
+  <h2 class="font-black text-white text-6xl lg:text-5xl md:text-3xl sm:text-xl leading-tight text-center max-w-5xl pb-8">
     JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
   </h2>
-  <p class="text-3xl text-white text-center pb-9">
+  <p class="text-3xl md:text-xl sm:text-base text-white text-center pb-9">
     Type your email down below and be young wild generation
   </p>
   <div class="relative min-w-[30%]">
     <input type="email" aria-describedby="helper-text-explanation"
-           class="bg-white rounded-xl text-gray-500 text-2xl text-start py-7 pl-7 pr-28 w-full"
+           class="bg-white rounded-xl text-gray-500 text-2xl sm:text-lg text-start py-7 md:py-4 pl-7 pr-28 w-full"
            placeholder="Add your email here">
     <button type="submit"
-            class="button absolute end-2.5 bottom-4">
+            class="button sm:text-base absolute end-2.5 bottom-4 md:bottom-1 sm:bottom-0.5">
       SEND
     </button>
   </div>
 </section>
 
-<footer class="bg-black flex xl:flex-row flex-col justify-between p-24">
-  <div class="xl:max-w-sm w-full mb-10">
-    <h2 class="font-black text-white text-4xl leading-relaxed">
+<footer class="bg-black flex flex-row xl:flex-col justify-between p-24 md:p-14 sm:p-8">
+  <div class="max-w-sm xl:w-full mb-10">
+    <h2 class="font-black text-white text-4xl sm:text-2xl leading-relaxed">
       FASHION
     </h2>
-    <p class="text-2xl text-gray-400 py-8">
+    <p class="text-2xl sm:text-xl text-gray-400 py-8">
       Complete your style with awesome clothes from us.
     </p>
     <div class="flex gap-3">
@@ -256,24 +255,24 @@
     </div>
   </div>
 
-  <div class="flex gap-x-44">
-    <ul>
-      <li><a class="text-2xl text-gray-200" href="#">Company</a></li>
-      <li class="footer-link"><a href="#">About</a></li>
+  <div class="flex sm:flex-wrap gap-44 md:gap-20">
+    <ul class="block">
+      <li><a class="text-2xl sm:text-lg sm:decoration-gray-300 underline text-gray-200" href="#">Company</a></li>
+      <li class="footer-link pt-4"><a href="#">About</a></li>
       <li class="footer-link"><a href="#">Contact us</a></li>
       <li class="footer-link"><a href="#">Support</a></li>
       <li class="footer-link"><a href="#">Careers</a></li>
     </ul>
-    <ul>
-      <li><a class="text-2xl text-gray-200" href="#">Quick Link</a></li>
-      <li class="footer-link"><a href="#">Share Location</a></li>
+    <ul class="block">
+      <li><a class="text-2xl sm:text-lg sm:decoration-gray-300 underline text-gray-200" href="#">Quick Link</a></li>
+      <li class="footer-link pt-4"><a href="#">Share Location</a></li>
       <li class="footer-link"><a href="#">Orders Tracking</a></li>
       <li class="footer-link"><a href="#">Size Guide</a></li>
       <li class="footer-link"><a href="#">FAQs</a></li>
     </ul>
-    <ul>
-      <li><a class="text-2xl text-gray-200" href="#">Legal</a></li>
-      <li class="footer-link"><a href="#">Terms & conditions</a></li>
+    <ul class="block">
+      <li><a class="text-2xl sm:text-lg sm:decoration-gray-300 underline text-gray-200" href="#">Legal</a></li>
+      <li class="footer-link pt-4"><a href="#">Terms & conditions</a></li>
       <li class="footer-link"><a href="#">Privacy Policy</a></li>
     </ul>
   </div>
