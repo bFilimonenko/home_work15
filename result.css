@@ -648,32 +648,20 @@ video {
   left: 15rem;
 }
 
-.right-12 {
-  right: 3rem;
+.right-\[5\%\] {
+  right: 5%;
 }
 
 .top-0 {
   top: 0px;
 }
 
-.top-5 {
-  top: 1.25rem;
-}
-
-.top-\[10px\] {
-  top: 10px;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
 .top-3 {
   top: 0.75rem;
 }
 
-.right-\[5\%\] {
-  right: 5%;
+.top-\[10px\] {
+  top: 10px;
 }
 
 .-z-10 {
@@ -769,16 +757,12 @@ video {
   height: 2.5rem;
 }
 
-.h-20 {
-  height: 5rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .max-h-\[880px\] {
@@ -882,17 +866,12 @@ video {
   gap: 0.75rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-44 {
   gap: 11rem;
 }
 
-.gap-x-44 {
-  -moz-column-gap: 11rem;
-       column-gap: 11rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .overflow-hidden {
@@ -1235,11 +1214,6 @@ video {
   top: 0.25rem;
 }
 
-.before\:top-28::before {
-  content: var(--tw-content);
-  top: 7rem;
-}
-
 .before\:top-3::before {
   content: var(--tw-content);
   top: 0.75rem;
@@ -1294,34 +1268,6 @@ video {
 
   .xl\:flex-col {
     flex-direction: column;
-  }
-
-  .xl\:gap-32 {
-    gap: 8rem;
-  }
-
-  .xl\:gap-\[2\%\] {
-    gap: 2%;
-  }
-
-  .xl\:gap-\[5\%\] {
-    gap: 5%;
-  }
-
-  .xl\:gap-\[10\%\] {
-    gap: 10%;
-  }
-
-  .xl\:gap-\[40px\] {
-    gap: 40px;
-  }
-
-  .xl\:gap-\[20\%\] {
-    gap: 20%;
-  }
-
-  .xl\:gap-20 {
-    gap: 5rem;
   }
 
   .xl\:text-7xl {
@@ -1418,18 +1364,6 @@ video {
 
   .md\:w-3\/4 {
     width: 75%;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem;
-  }
-
-  .md\:gap-5 {
-    gap: 1.25rem;
-  }
-
-  .md\:gap-10 {
-    gap: 2.5rem;
   }
 
   .md\:gap-20 {
@@ -1586,36 +1520,8 @@ video {
     line-height: 1.75rem;
   }
 
-  .sm\:decoration-gray-500\/30 {
-    text-decoration-color: rgb(107 114 128 / 0.3);
-  }
-
-  .sm\:decoration-gray-300\/30 {
-    text-decoration-color: rgb(209 213 219 / 0.3);
-  }
-
-  .sm\:decoration-gray-200\/30 {
-    text-decoration-color: rgb(229 231 235 / 0.3);
-  }
-
-  .sm\:decoration-gray-200\/20 {
-    text-decoration-color: rgb(229 231 235 / 0.2);
-  }
-
-  .sm\:decoration-gray-200\/50 {
-    text-decoration-color: rgb(229 231 235 / 0.5);
-  }
-
-  .sm\:decoration-gray-200 {
-    text-decoration-color: #e5e7eb;
-  }
-
   .sm\:decoration-gray-300 {
     text-decoration-color: #d1d5db;
-  }
-
-  .sm\:underline-offset-1 {
-    text-underline-offset: 1px;
   }
 
   .sm\:before\:right-32::before {
@@ -1631,6 +1537,16 @@ video {
   .sm\:before\:top-10::before {
     content: var(--tw-content);
     top: 2.5rem;
+  }
+
+  .sm\:before\:right-2::before {
+    content: var(--tw-content);
+    right: 0.5rem;
+  }
+
+  .sm\:before\:right-0::before {
+    content: var(--tw-content);
+    right: 0px;
   }
 
   .sm\:before\:w-\[8rem\]::before {
